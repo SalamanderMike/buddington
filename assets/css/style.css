@@ -19,54 +19,29 @@ html, body {
 	z-index: -10;
 }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+[ng\:cloak], 
+[ng-cloak], 
+[data-ng-cloak], 
+[x-ng-cloak], 
+.ng-cloak, 
+.x-ng-cloak {
   display: none !important;
 }
 
 
-
-body section {
-	text-align: center;
-	font-size: 1.5em;
-	color: #878787;
-}
-
-
-body label {
-	cursor: pointer;
-}
-
+/*GLOBALS >***************************************************/
 p {
 	margin-bottom: 7px;
  }
-
-
-#orinda-1 {
-	position: relative;
-	top: 0px;
-	margin: 10px;
-	margin-top: 0px;
-	float: left;
-	height: 286px;
-	width: 191px;
-	background: url('../images/orinda-1.jpg');
-	border: solid 2px #b0b0b0;
-	display: inline-block;
+ a, 
+ a:active, 
+ a:focus {
+	outline: none; /*TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX*/
 }
 
-#eliz-photo {
-	position: relative;
-	top: 0px;
-	margin: 20px;
-	margin-top: 0px;
-	float: right;
-	height: 286px;
-	width: 286px;
-	background: url('../images/elizabeth.jpg');
-	border: solid 2px #b0b0b0;
-	display: inline-block;
-}
 
+
+/*HEADER >***************************************************/
 #section-head {
 	position: fixed;
 	top: 0px;
@@ -112,12 +87,6 @@ p {
 	text-decoration: none;
 }
 
-a.red {
-	color: #BF3F3F;
-	text-decoration: none;
-}
-
-
 #section-content {
 	position: fixed;
 	top: 120px;
@@ -126,7 +95,37 @@ a.red {
 	width: 100%;
 }
 
-/*TABS AND PANELS (GENERAL)***************************************************/
+
+
+
+/*PHOTOS >***************************************************/
+#orinda-1 {
+	position: relative;
+	top: 0px;
+	margin: 0 10px 10px 0;
+	float: left;
+	height: 286px;
+	width: 191px;
+	background: url('../images/orinda-1.jpg');
+	border: solid 2px #b0b0b0;
+	display: inline-block;
+}
+
+#eliz-photo {
+	position: relative;
+	top: 0px;
+	margin: 0 0 5px 5px;
+	float: right;
+	height: 286px;
+	width: 286px;
+	background: url('../images/elizabeth.jpg');
+	border: solid 2px #b0b0b0;
+	display: inline-block;
+}
+
+
+
+/*TABS >***************************************************/
 .nav.nav-tabs {
 	position: relative;
 	margin: 0 auto;
@@ -136,25 +135,9 @@ a.red {
 	text-align: right;
 	font-size: 2em;
 }
-
-.nav-tabs{										/*NON-SELECTED TAB*/
+.nav-tabs{
 	background: transparent;
 	border: none;
-
-}
-.tab-content{									/*PANEL BOX*/
-	position: absolute;
-	top: 100px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background: rgba(255, 255, 255, .75);
-	color: #ffdb00;
-	padding: 2%;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	z-index: -1;
 }
 .nav-tabs > div > a{	
 	border: none;
@@ -164,15 +147,14 @@ a.red {
 	display: inline;
 	margin: 0 17px;
 }
-
-.nav-tabs > div > a:hover{						/*HOVERED TAB*/
+.nav-tabs > div > a:hover{
  	background-color: rgba(0, 0, 0, 0) !important;
     border: none;
     text-decoration: none;
     color: #9a6ae5;
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
-.nav-tabs > div.active > a,						/*SELECTED TAB*/
+.nav-tabs > div.active > a,
 .nav-tabs > div.active > a:focus,
 .nav-tabs > div.active > a:hover{
     background-color: rgba(0, 0, 0, 0) !important;
@@ -182,53 +164,41 @@ a.red {
     text-decoration: none;
 }
 
-a, a:active, a:focus {							/*TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX*/
-	outline: none;
-}
 
-/*TABS AND PANELS (ELEMENT SPECIFIC)*******************************************/
-.panels {										/*PANEL BOX DIMENSIONS*/
-	margin: 0 auto;
-	width: 90%;
-}
 
-.tab-pane {										/* SPACE INDIDE PANEL BOX*/
+
+/*PANELS >*******************************************/
+.tab-content{
+	background: rgba(255, 255, 255, .75);
 	position: absolute;
-	min-height: 500px;
-	width: 100%;
-	color: #444444;
-	font-family: 'Muli', sans-serif;
-	font-size: .95em;
-	overflow: hidden;
-}
-
-.content {										/*CONTENT INSIDE .tab-pane*/
-	/*font-size: 1.2em;*/
-}
-
-.content-position {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100%;
-	padding-right: 30px;
-	text-align: left;
-	overflow-y: auto;
-}
-
-.content-box{									/*PANEL BOX*/
-	position: fixed;
-	top: 21%;
-	bottom: 0px;
-	width: 100%;
-    color: #878787;
-    padding: 1%;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 18px;
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+	z-index: -1;
 }
+
+.tab-pane {
+	position: absolute;
+	min-height: 550px;
+	width: 100%;
+}
+
+.content-box {
+	position: absolute;
+	height: 100%;
+	font-family: 'Muli', sans-serif;
+	color: #444444;
+	text-align: left;
+	font-size: .95em;
+	padding-right: 18px;
+	overflow-y: auto;
+}
+
 
 
 
