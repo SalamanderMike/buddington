@@ -1,0 +1,25 @@
+{
+    "name": "node_site_template",
+    "version": "1.0.0",
+    "description": "Template for basic node.js sites with angular.js",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SalamanderMike/node_site_template.git"
+    },
+    "author": "Michael McClure",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SalamanderMike/node_site_template/issues"
+    },
+    "homepage": "https://github.com/SalamanderMike/node_site_template#readme",
+    "dependencies": {
+        "bower": "^1.6.3",
+        "body-parser": "^1.14.1",
+        "ejs": "^2.3.4",
+        "express": "^4.13.3"
+    }
+}

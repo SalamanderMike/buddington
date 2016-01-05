@@ -1,0 +1,25 @@
+{
+  "TITLE":          "Elizabeth Buddington",
+  "SUBTITLE":       "Site",
+
+  "HOME":           "Home",
+  "SERVICES":       "Services",
+  "PRODUCTS":       "Products",
+  "NEWS":           "News & Reviews",
+  "ABOUT":          "About Us",
+
+  "enterName":      "Enter your name here!",
+  "isFilteredTo":   "is filtered to",
+  "using":          "using",
+
+  "editDateFormat": "EDIT DATE FORMAT",
+  "currentTimeIs":  "CURRENT TIME IS",
+
+  "of":             "of",
+  "remaining":      "remaining",
+  "remove":         "remove",
+  "addNewTaskHere": "...add new task here",
+  "ADDTASK":        "ADD TASK",
+  "chooseLanguage": "Choose the language for this website"
+}
+

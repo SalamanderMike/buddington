@@ -1,0 +1,29 @@
+{
+  "name": "node_site_template",
+  "description": "Template for basic node.js sites with angular.js",
+  "main": "server.js",
+  "authors": [
+    "Michael McClure"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SalamanderMike/node_site_template",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-translate": "~2.8.1",
+    "angular-translate-loader-static-files": "~2.8.1",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
