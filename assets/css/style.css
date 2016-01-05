@@ -12,32 +12,12 @@
 	height: 2400px;
 	z-index: -10;
 }
-.photo {
 
-}
 html, body {
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-	width: 100%;
-	height: 2000px;
-	background: white;	
 	font-family: 'Josefin Sans', sans-serif;
 	overflow: hidden;
 	z-index: -10;
 }
-/*#background-home {
-	position: fixed; 
-	top: 500px; 
-	left: 0; 
-	width: 100%;
-	height: 500px;
-	background: white;
-}*/
-
-	/*background: url('../images/gallery-6.jpg') no-repeat center center fixed; */
-
-
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
@@ -56,13 +36,34 @@ body label {
 	cursor: pointer;
 }
 
+p {
+	margin-bottom: 7px;
+ }
+
+
+#orinda-1 {
+	position: relative;
+	top: 0px;
+	margin: 10px;
+	margin-top: 0px;
+	float: left;
+	height: 286px;
+	width: 191px;
+	background: url('../images/orinda-1.jpg');
+	border: solid 2px #b0b0b0;
+	display: inline-block;
+}
+
 #eliz-photo {
 	position: relative;
 	top: 0px;
-	float: left;
+	margin: 20px;
+	margin-top: 0px;
+	float: right;
 	height: 286px;
 	width: 286px;
-	background: url('../images/elizabeth.png');
+	background: url('../images/elizabeth.jpg');
+	border: solid 2px #b0b0b0;
 	display: inline-block;
 }
 
@@ -72,7 +73,6 @@ body label {
 	left: 0px;
 	height: 120px;
 	width: 100%;
-	color: #128900;
 	font-size: 2em;
 
 }
@@ -91,21 +91,24 @@ body label {
 	position: fixed;
 	top: 100px;
 	left: 50px;
+	color: #814700;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
 
-#appointment {
+.links {
 	position: fixed;
 	top: 10px;
 	right: 10px;
-	color: #128900;
+	color: #ffdb00;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
 	font-size: .8em;
-	text-align: right;
+	text-align: center;
     text-decoration: none;
 	cursor: pointer;
 }
 
-#appointment:hover {
-	color: #BF593F;
+.link:hover {
+	color: white;
 	text-decoration: none;
 }
 
@@ -146,7 +149,7 @@ a.red {
 	left: 0px;
 	right: 0px;
 	background: rgba(255, 255, 255, .75);
-	color: #878787;
+	color: #ffdb00;
 	padding: 2%;
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
@@ -155,7 +158,7 @@ a.red {
 }
 .nav-tabs > div > a{	
 	border: none;
-    color: #878787;
+    color: #6c3fb4;
 }
 .nav-tabs > div {
 	display: inline;
@@ -166,16 +169,16 @@ a.red {
  	background-color: rgba(0, 0, 0, 0) !important;
     border: none;
     text-decoration: none;
-    color: #5C5A5A;
-	text-shadow: 0px 2px 1px rgba(0, 0, 0, 1);
+    color: #9a6ae5;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
 .nav-tabs > div.active > a,						/*SELECTED TAB*/
 .nav-tabs > div.active > a:focus,
 .nav-tabs > div.active > a:hover{
     background-color: rgba(0, 0, 0, 0) !important;
     border: none;
-    color: #5C5A5A;
-	text-shadow: 0px 2px 1px rgba(0, 0, 0, 1);
+    color: #9a6ae5;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
@@ -210,7 +213,7 @@ a, a:active, a:focus {							/*TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX*/
 	left: 0px;
 	right: 0px;
 	width: 100%;
-	padding-right: 20px;
+	padding-right: 30px;
 	text-align: left;
 	overflow-y: auto;
 }

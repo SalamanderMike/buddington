@@ -13,8 +13,6 @@
 	<!-- ANGULARJS 角 -->
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
-	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="bower_components/angular-animate/angular-animate.js"></script>
 
 	<!-- ANGULAR WIRING 源文件 -->
@@ -22,10 +20,6 @@
 	<script src="js/router.js"></script>
 	<script src="js/controllers.js"></script>
 	<script src="js/components.js"></script>
-
-	<!-- TRANSLATION DEPENDENCIES  -->
-	<script src="bower_components/angular-translate/angular-translate.min.js"></script>
-	<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>	
 
 	<!-- BOOTSTRAP -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -41,8 +35,10 @@
 	<section id="section-head">
 		<div id="logo"></div>
 		<div id="sub-head">Look great every day!</div>
-		<a href="" id="appointment" ng-click="app.tabFunction(key)">Schedule An Appointment</a><br>
-		<h1>{{num}}</h1>
+		<div class="links">
+			<p class="link" ng-click="app.tabFunction(key)">Schedule An Appointment</p>
+			<p class="link" ng-click="app.tabFunction('CONTACT')">Contact Us!</p>		
+		</div>
 	</section>
 
 <!-- LEFT SLIDING DRAWER -->
@@ -51,17 +47,8 @@
 		<drawer visible="leftVisible" alignment="left">
 			<div class="nav nav-tabs" id="spacer">
 				<div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
-					<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a><br>
+					<a href="" ng-click="app.tabFunction(key)" ng-bind="key"></a><br>
 				</div> 
 			</div>
 		</drawer>
 	</div>
-
-
-<!-- BROWSER WINDOW SIZE DETECTOR (connected to disabled .directive)-->
-<!-- 	<section responsive="partials/large.html" 
-	     smbreak=667
-	     smtemplate="partials/small.html"
-	     mdbreak=1024
-	     mdtemplate="partials/medium.html">
-	</section> -->

@@ -3,40 +3,46 @@
 <div id="section-content">
 	<ul class="nav nav-tabs" id="hide-tabs"> 
 	    <div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
-			<a href="" ng-click="app.tabFunction(key)" ng-bind="key | translate"></a>
+			<a href="" ng-click="app.tabFunction(key)" ng-bind="key"></a>
 	    </div> 
 	</ul> 
 
 
 	<div class="tab-content">
 
-		<div title="{{ 'HOME' | translate }}" class="tab-pane" ng-class="{active : views.HOME}">
+		<div class="tab-pane" ng-class="{active : views.HOME}">
 			<div class="content-position">
 				We believe the secret to beautiful skin is healthy skin. Let us help you look great every day with customized deep cleaning treatments and simple daily home-care regiments that will give your skin a healthy youthful glow.
 			</div>
 		</div>
 
-		<div title="{{ 'SERVICES' | translate }}" class="tab-pane" ng-class="{active : views.SERVICES}">
+		<div class="tab-pane" ng-class="{active : views.SERVICES}">
 			<div class="content-position">
 				<% include ./partials/services.ejs %>
 			</div>
 		</div>
 
-		<div title="{{ 'PRODUCTS' | translate }}" class="tab-pane" ng-class="{active : views.PRODUCTS}">
+		<div class="tab-pane" ng-class="{active : views.PRODUCTS}">
 			<div class="content-position">
 				<% include ./partials/products.ejs %>
 			</div>
 		</div>
 
-		<div title="{{ 'NEWS' | translate }}" class="tab-pane" ng-class="{active : views.NEWS}">
+		<div class="tab-pane" ng-class="{active : views.NEWS}">
 			<div class="content-position">
 				<% include ./partials/news.ejs %>
 			</div>
 		</div>
 
-		<div title="{{ 'ABOUT' | translate }}" class="tab-pane" ng-class="{active : views.ABOUT}">
+		<div class="tab-pane" ng-class="{active : views.ABOUT}">
 			<div class="content-position">
 				<% include ./partials/about.ejs %>
+			</div>
+		</div>
+
+		<div class="tab-pane" ng-class="{active : CONTACT}">
+			<div class="content-position">
+				<% include ./partials/contact.ejs %>
 			</div>
 		</div>
 

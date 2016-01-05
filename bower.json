@@ -1,12 +1,12 @@
 {
-  "name": "node_site_template",
-  "description": "Template for basic node.js sites with angular.js",
+  "name": "Med Esthetics",
+  "description": "Serving Med Esthetics Business",
   "main": "server.js",
   "authors": [
     "Michael McClure"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/SalamanderMike/node_site_template",
+  "homepage": "https://github.com/SalamanderMike/buddington",
   "moduleType": [],
   "private": true,
   "ignore": [
@@ -17,13 +17,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.7",
-    "angular-route": "~1.4.7",
-    "angular-resource": "~1.4.7",
-    "angular-animate": "~1.4.7",
-    "angular-sanitize": "~1.4.7",
-    "angular-translate": "~2.8.1",
-    "angular-translate-loader-static-files": "~2.8.1",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-animate": "~1.4.8",
     "font-awesome": "fontawesome#~4.4.0"
   }
 }

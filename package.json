@@ -1,25 +1,25 @@
 {
-    "name": "node_site_template",
-    "version": "1.0.0",
-    "description": "Template for basic node.js sites with angular.js",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SalamanderMike/node_site_template.git"
-    },
-    "author": "Michael McClure",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/SalamanderMike/node_site_template/issues"
-    },
-    "homepage": "https://github.com/SalamanderMike/node_site_template#readme",
-    "dependencies": {
-        "bower": "^1.6.3",
-        "body-parser": "^1.14.1",
-        "ejs": "^2.3.4",
-        "express": "^4.13.3"
-    }
+  "name": "buddington",
+  "version": "1.0.0",
+  "description": "Med Esthetics Business Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalamanderMike/buddington.git"
+  },
+  "author": "Michael McClure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SalamanderMike/buddington/issues"
+  },
+  "homepage": "https://github.com/SalamanderMike/buddington#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "bower": "^1.7.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  }
 }

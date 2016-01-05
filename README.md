@@ -1,5 +1,5 @@
-# Node/Angular Demonstration
-This app is designed to exemplify angular.js integration onto a Node.js backend utilizing Angular routing, filters, directives, factories, and services.
+# Med Esthetics
+This node app serves Med Esthetics Business
 
 
 
@@ -12,4 +12,3 @@ Back End:
 Front End:
 
 * AngularJS
-* angular-translate

@@ -1,6 +1,4 @@
-var config = 
-	// require('./assets/resources/config.js').env,											// DISABLED FOR PRODUCTION
-	express = require('express'),
+var express = require('express'),
 	bodyParser  = require('body-parser'),
 	path = require('path'),
 	app = express();
@@ -18,7 +16,7 @@ app.use('/partials', express.static(path.join(__dirname + '/views/partials')));	
 app.use('/locales', express.static(path.join(__dirname + '/locales')));						// PLACE PARTIALS IN /views
 app.use('/bower_components', express.static(path.join(__dirname + '/bower_components')));	// PLACE BOWER REQUIREMENTS
 app.use(express.static(__dirname + '/assets'));
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
 
 
 
