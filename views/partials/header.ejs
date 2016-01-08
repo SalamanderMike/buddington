@@ -8,6 +8,7 @@
 
 	<!-- FONTS -->
 	<link 	href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Muli:300" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 	<link 	rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
 	<!-- ANGULARJS 角 -->
@@ -27,6 +28,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link 	rel="stylesheet" type="text/css" href="css/style.css" />
 
+	<!-- GOOGLE MAPS -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 </head>
 <body class="ng-view" ng-cloak>
 	<div class="background">
@@ -36,7 +40,8 @@
 		<div id="logo"></div>
 		<div id="sub-head">Look great every day!</div>
 		<div class="links">
-			<p class="link" ng-click="app.tabFunction(key)">Schedule An Appointment</p>
+			<!-- <p class="link" ng-click="app.tabFunction(key)">Schedule An Appointment</p> -->
+			<a class="link" href="mailto:ContactUs@Med-EstheticsRx.com?subject=Appointment Request">Schedule An Appointment</a>
 			<p class="link" ng-click="app.tabFunction('CONTACT')">Contact Us!</p>		
 		</div>
 	</section>

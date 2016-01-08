@@ -9,13 +9,15 @@ Crtl.controller('AppController', function ($scope, $rootScope, $interval) {
 	$scope.CONTACT = false;
 	$scope.views = {
 		HOME: false,
-		SERVICES: false,
+		SERVICES: true,
 		PRODUCTS: false,
 		NEWS: false,
-		ABOUT: true
+		ABOUT: false
 	}
 
-
+	app.openPDF = function() {
+		window.open('../resources/Orinda_News_0410.pdf','_blank');
+	}
 
 
 // TEST AREA (HARD HAT REQUIRED)
@@ -75,5 +77,15 @@ Crtl.controller('AppController', function ($scope, $rootScope, $interval) {
 		});
 	}
 
-
+	// function initialize() {
+	// 	console.log("MAP!")
+	// 	var mapCanvas = document.getElementById('map');
+	// 	var mapOptions = {
+	// 		center: new google.maps.LatLng(44.5403, -78.5463),
+	// 		zoom: 8,
+	// 		mapTypeId: google.maps.MapTypeId.ROADMAP
+	// 	}
+	// 	var map = new google.maps.Map(mapCanvas, mapOptions);
+	// }
+	// google.maps.event.addDomListener(window, 'load', initialize());
 });

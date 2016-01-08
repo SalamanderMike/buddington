@@ -8,14 +8,19 @@
 	</ul> 
 
 
-	<div class="tab-content">
+<div class="home-content" ng-show="views.HOME">
+	<div class="home-top">The secret to beautiful skin is healthy skin !</div>
+	<div class="home-mid">Let us help you look great every day</div>
+	<div class="home-bot">
+		<div>Customized deep cleaning treatments and simple, daily</div>
+		<div>home-care regiments that will give your skin</div>
+		<div>a healthy youthful glow</div>
+	</div>
+</div>
 
-		<div class="tab-pane" ng-class="{active : views.HOME}">
-			<div class="content-box">
-				We believe the secret to beautiful skin is healthy skin. Let us help you look great every day with customized deep cleaning treatments and simple daily home-care regiments that will give your skin a healthy youthful glow.
-			</div>
-		</div>
 
+
+	<div class="tab-content" ng-hide="views.HOME">
 
 		<div class="tab-pane" ng-class="{active : views.SERVICES}">
 			<div class="content-box">
