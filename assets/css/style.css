@@ -9,7 +9,7 @@
 	top: 0; 
 	left: 0; 
 	width: 100%;
-	height: 2400px;
+	height: 100%;
 	z-index: -10;
 }
 
@@ -19,14 +19,14 @@ html, body {
 	z-index: -10;
 }
 
-[ng\:cloak], 
+/*[ng\:cloak], 
 [ng-cloak], 
 [data-ng-cloak], 
 [x-ng-cloak], 
 .ng-cloak, 
 .x-ng-cloak {
   display: none !important;
-}
+}*/
 
 
 /*GLOBALS >***************************************************/
@@ -99,13 +99,6 @@ a.link:hover,
 	cursor: pointer;
 }
 
-#section-content {
-	position: fixed;
-	top: 120px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-}
 
 /*HOME >***************************************************/
 .home-content {
@@ -116,13 +109,17 @@ a.link:hover,
 	opacity: .4;
 }
 .home-top {
+	position: relative;
+	top: 150px;
 	float: left;
 	margin: 20px;
 	margin-top: 70px;
 }
 .home-mid {
+	position: relative;
+	top: 120px;
 	float: right;
-	margin: 20px;
+	margin: 10px 50px;
 }
 .home-bot {
 	position: fixed;
@@ -210,7 +207,7 @@ a.link:hover,
 	display: inline-block;
 }
 
-
+section-content
 
 /*CONTACT >***************************************************/
 .contact-content {
@@ -249,9 +246,12 @@ a.link:hover,
 	top: 0px;
 	right: 0px;
 	float: right;
-	height: 400px;
+	height: 378px;
 	width: 500px;
-	background: black;
+	background: grey;
+	background: url('../images/map.gif');
+	box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);
+	border: solid 2px #b0b0b0;
 	display: inline-block;
 }
 
@@ -369,6 +369,7 @@ a.link:hover,
 /*TABS >***************************************************/
 .nav.nav-tabs {
 	position: relative;
+	top: 120px;
 	margin: 0 auto;
 	min-width: 482px;
 	width: 100%;
@@ -413,7 +414,7 @@ a.link:hover,
 .tab-content{
 	background: rgba(255, 255, 255, .75);
 	position: absolute;
-	top: 100px;
+	top: 220px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -421,13 +422,15 @@ a.link:hover,
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
 	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+	display: block;
 	z-index: -1;
 }
 
 .tab-pane {
 	position: absolute;
-	min-height: 550px;
+	height: 550px;
 	width: 100%;
+	display: block;
 }
 
 .content-box {
@@ -438,7 +441,8 @@ a.link:hover,
 	text-align: left;
 	font-size: .95em;
 	padding-right: 18px;
-	overflow-y: auto;
+	display: block;
+	overflow-y: scroll;
 }
 
 

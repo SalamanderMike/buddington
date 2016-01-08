@@ -1,6 +1,6 @@
 <% include ./partials/header.ejs %>
 
-<div id="section-content">
+<!-- <div id="section-content"> -->
 	<ul class="nav nav-tabs" id="hide-tabs"> 
 	    <div ng-repeat="(key,val) in views track by $index" ng-class="{active:val}">
 			<a href="" ng-click="app.tabFunction(key)" ng-bind="key"></a>
@@ -54,5 +54,5 @@
 
 	</div>
 
-</div>
+<!-- </div> -->
 <% include ./partials/footer.ejs %>

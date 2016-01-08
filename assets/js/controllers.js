@@ -8,8 +8,8 @@ Crtl.controller('AppController', function ($scope, $rootScope, $interval) {
 	$scope.focusFocus = false;
 	$scope.CONTACT = false;
 	$scope.views = {
-		HOME: false,
-		SERVICES: true,
+		HOME: true,
+		SERVICES: false,
 		PRODUCTS: false,
 		NEWS: false,
 		ABOUT: false
