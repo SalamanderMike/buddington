@@ -19,14 +19,14 @@ html, body {
 	z-index: -10;
 }
 
-/*[ng\:cloak], 
+[ng\:cloak], 
 [ng-cloak], 
 [data-ng-cloak], 
 [x-ng-cloak], 
 .ng-cloak, 
 .x-ng-cloak {
   display: none !important;
-}*/
+}
 
 
 /*GLOBALS >***************************************************/
@@ -549,7 +549,7 @@ drawer > div > div:hover {
 /*test SMALL size*/
 @media (max-width: 667px) {
 
-	.links {
+/*	.links {
 		text-align: right;
 	}
 
@@ -582,7 +582,7 @@ drawer > div > div:hover {
 		-webkit-transform: translate3d(500px, 0, 0);
 		-o-transform: translate3d(500px, 0, 0);
 		-moz-transform: translate3d(500px, 0, 0);
-	}
+	}*/
 }
 
 /*RESPONSIVE DESIGN (DEVICE)**********************************************************/
@@ -592,7 +592,7 @@ drawer > div > div:hover {
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-	body h1 {
+/*	body h1 {
 		font-size: 2.5em;
 	}
 
@@ -624,7 +624,7 @@ drawer > div > div:hover {
 
 	#options {
 		font-size: 2em;
-	}
+	}*/
 
 }
 
