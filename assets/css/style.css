@@ -248,8 +248,8 @@ section-content
 	float: right;
 	height: 378px;
 	width: 500px;
-	background: grey;
-	background: url('../images/map.gif');
+/*	background: grey;
+	background: url('../images/map.gif');*/
 	box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);
 	border: solid 2px #b0b0b0;
 	display: inline-block;

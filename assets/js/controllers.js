@@ -1,6 +1,6 @@
 Crtl = angular.module('Controllers', []);
 
-Crtl.controller('AppController', function ($scope, $rootScope, $interval) {
+Crtl.controller('AppController', function ($scope, $rootScope, $interval, $timeout) {
 // SCOPE VARIABLES
 	var app = this;
 	var image = 1;
@@ -81,11 +81,44 @@ Crtl.controller('AppController', function ($scope, $rootScope, $interval) {
 	// 	console.log("MAP!")
 	// 	var mapCanvas = document.getElementById('map');
 	// 	var mapOptions = {
-	// 		center: new google.maps.LatLng(44.5403, -78.5463),
-	// 		zoom: 8,
+	// 		center: new google.maps.LatLng(37.8797452,-122.1836645),
+	// 		zoom: 10,
 	// 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	// 	}
 	// 	var map = new google.maps.Map(mapCanvas, mapOptions);
 	// }
-	// google.maps.event.addDomListener(window, 'load', initialize());
+
+
+	function initialize() {
+		var mapOptions = {
+			center: new google.maps.LatLng(37.879745,-122.181470),
+			zoom: 11,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		var geocoder = new google.maps.Geocoder();
+		geocoder.geocode({ 'address': "50 Vashell Way, Orinda, California 94563" }, function (results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				map.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+					map: map,
+					position: results[0].geometry.location,
+				});
+			} else 
+			alert("Problem with geolocation");
+
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	  // app.map = function() {
+	  // 	$timeout(function(){
+			// console.log("MAP FUNCTION");
+	  // 	}, 500)
+	  // }
+
+
+
+
+
 });
