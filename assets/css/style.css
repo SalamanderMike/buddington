@@ -1,7 +1,7 @@
 .background {
 	position: absolute; 
 	background: white;
-	background: url(../images/gallery-1.jpg) no-repeat center center fixed;
+	background: url(../images/background_1x.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -499,6 +499,11 @@ section-content
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+.background {
+	background: url(../images/background_2x.jpg) no-repeat center center fixed;
+}
+
 
 
 	.tab-content {
