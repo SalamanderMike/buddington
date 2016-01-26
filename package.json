@@ -18,8 +18,8 @@
   "homepage": "https://github.com/SalamanderMike/buddington#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
-    "bower": "^1.7.2",
+    "bower": "^1.7.4",
     "ejs": "^2.3.4",
-    "express": "^4.13.3"
+    "express": "^4.13.4"
   }
 }
