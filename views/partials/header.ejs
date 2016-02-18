@@ -6,24 +6,17 @@
 	<meta 	name="description" content="Our certified medical estheticians are trained in the latest treatments and technologies to bring back your skin’s natural beauty">
 	<title 	ng-bind="title"></title>
 
-	<!-- FONTS -->
-	<link 	href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Muli:300" rel="stylesheet" type="text/css">
-	<link 	href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
-	<link 	rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-
-	<!-- ANGULAR -->
-	<script src="bower_components/angular/angular.min.js"></script>
-
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- CORE DEPENDENCIES -->
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link 	href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link 	href="/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" >
 	<link 	rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!-- ANGULAR DIRECTIVES -->
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
 
 	<!-- ANGULAR WIRING -->
 	<script src="js/main.js"></script>
@@ -31,19 +24,13 @@
 	<script src="js/controllers.js"></script>
 	<script src="js/components.js"></script>
 
+	<!-- FONTS -->
+	<link 	href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Muli:300|Dancing+Script" rel="stylesheet" type="text/css">
+
 	<!-- GOOGLE MAPS -->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
-	<!-- PREFETCH -->
-<!-- <link rel="prefetch" href="/images/orinda-1.jpg">
-<link rel="prefetch" href="/images/elizabeth.jpg">
-<link rel="prefetch" href="/images/products-collage.png">
-<link rel="prefetch" href="/images/products-2.jpg">
-<link rel="prefetch" href="/images/products-1.jpg">
-<link rel="prefetch" href="/images/award.gif">
-<link rel="prefetch" href="/images/news.gif">
-<link rel="prefetch" href="/images/orinda-2.jpg"> -->
-
+	<!-- PREFETCH IMAGES: IN FOOTER -->
 </head>
 <body ng-view ng-cloak>
 	<div class="background">
