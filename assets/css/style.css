@@ -140,7 +140,7 @@ a.link:hover,
 .nav-tabs > div.active > a,
 .nav-tabs > div.active > a:focus,
 .nav-tabs > div.active > a:hover{
-    background: radial-gradient(ellipse at center, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 75%) !important;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 75%) !important;
     border: 0px solid transparent;
     border-radius: 100%;
     color: #563A80;

@@ -11,7 +11,7 @@ Back End:
 
 Front End:
 
-* AngularJS		1.4.9
+* AngularJS		1.5.0
 
 
 ### Version History
