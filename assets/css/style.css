@@ -39,8 +39,12 @@ p {
  a, 
  a:active, 
  a:focus {
-	outline: none; /*TO DISABLE BOXES AROUND CLICK AREAS IN FIREFOX*/
+	display: hidden;
+	outline: none;
+	text-decoration: none;
+	color: yellow;
 }
+
 ul {
 	list-style-type: none;
 }
@@ -90,13 +94,12 @@ li {
     text-decoration: none;
 	cursor: pointer;
 }
-a.link:link {
-	color: #ffdb00;
-	cursor: pointer;
+.link {
+	color: yellow;
 }
 
-a.link:hover,
-.link:hover {
+.link:hover,
+.link:active {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
