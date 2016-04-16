@@ -1,6 +1,6 @@
 Crtl = angular.module('Controllers', []);
 
-Crtl.controller('AppController', function ($scope, $rootScope, $interval, $timeout) {
+Crtl.controller('AppController',['$scope', '$rootScope', '$interval', '$timeout', function ($scope, $rootScope, $interval, $timeout) {
 // SCOPE VARIABLES
 	var app = this;
 	var image = 1;
@@ -121,4 +121,4 @@ Crtl.controller('AppController', function ($scope, $rootScope, $interval, $timeo
 
 
 
-});
+}]);
