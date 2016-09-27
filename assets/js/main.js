@@ -1,6 +1,6 @@
 angular.module("myApp", [
 	"Router",
-	"Controllers",
+	"Controller",
 	"Components"
 ])
 

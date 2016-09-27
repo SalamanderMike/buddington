@@ -7,7 +7,7 @@
 	<title 	ng-bind="title"></title>
 
 	<!-- CORE DEPENDENCIES -->
-	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<link 	href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,14 +21,14 @@
 	<!-- ANGULAR WIRING -->
 	<script src="js/main.js"></script>
 	<script src="js/router.js"></script>
-	<script src="js/controllers.js"></script>
+	<script src="js/controller.js"></script>
 	<script src="js/components.js"></script>
 
 	<!-- FONTS -->
 	<link 	href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Muli:300|Dancing+Script" rel="stylesheet" type="text/css">
 
 	<!-- GOOGLE MAPS -->
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWmy26Ok9BIU7lYJCkrbc2IU3blAL9PRk"></script>
 
 	<!-- PREFETCH IMAGES: IN FOOTER -->
 </head>
@@ -42,7 +42,7 @@
 		<div class="links">
 			<!-- <p class="link" ng-click="app.tabFunction(key)">Schedule An Appointment</p> -->
 			<a class="link" href="http://www.spasalon.com/online/medesthetics">Schedule An Appointment</a>
-			<p class="link" ng-click="app.tabFunction('CONTACT')">Contact Us!</p>		
+			<p class="link" ng-click="app.contact()" id="contact">Contact Us!</p>
 		</div>
 	</section>
 

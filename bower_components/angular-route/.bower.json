@@ -1,20 +1,20 @@
 {
   "name": "angular-route",
-  "version": "1.5.5-build.4753+sha.5656eb3",
+  "version": "1.5.8",
   "license": "MIT",
   "main": "./angular-route.js",
   "ignore": [],
   "dependencies": {
-    "angular": "1.5.5-build.4753+sha.5656eb3"
+    "angular": "1.5.8"
   },
   "homepage": "https://github.com/angular/bower-angular-route",
-  "_release": "1.5.5-build.4753+sha.5656eb3",
+  "_release": "1.5.8",
   "_resolution": {
     "type": "version",
-    "tag": "v1.5.5-build.4753+sha.5656eb3",
-    "commit": "bf2db84d6aa913d6af6d3a1657c1435fac33036e"
+    "tag": "v1.5.8",
+    "commit": "e96eff424fdd9689061659603ca59470375bf024"
   },
   "_source": "https://github.com/angular/bower-angular-route.git",
-  "_target": "~1.5.4",
+  "_target": "^1.5.8",
   "_originalSource": "angular-route"
 }

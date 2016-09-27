@@ -18,12 +18,23 @@ app.use('/bower_components', express.static(path.join(__dirname + '/bower_compon
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 
+require('./assets/js/config.js')(app);
 
+var env = process.env.GOOGLE_KEY || 'develop';
 
+app.get('/config', function (req, res) {
+	if (env !== 'develop') {
+		res.send(env);
+	} else {
+		res.json({result: process.env.LOCAL_ENV});
+	}
+});
 
 
 // ROUTES
 require('./routes/routes')(app);
+
+
 
 
 

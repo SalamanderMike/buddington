@@ -17,14 +17,14 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.5.4",
-    "angular-route": "~1.5.4",
-    "angular-animate": "~1.5.4",
-    "font-awesome": "fontawesome#~4.5.0",
-    "jquery": "^2.2.3",
-    "bootstrap": "^3.3.6"
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
   },
     "resolutions": {
-    "angular": "~1.5.4"
+    "angular": "^1.5.8"
   }
 }

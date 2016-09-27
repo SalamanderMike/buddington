@@ -1,6 +1,6 @@
 Component = angular.module('Components', []);
 
-Component.directive('drawer',['', function() {
+Component.directive('drawer', function() {
 	return {
 		template: "<div ng-class='{ show: visible }' ng-transclude></div>",
 		scope: {
@@ -9,7 +9,7 @@ Component.directive('drawer',['', function() {
 		restrict: 'E',
 		transclude: true
 	};
-}]);
+});
 
 Component.directive('autoFocus',['$timeout', function ($timeout) {							// AUTOFOCUS INPUT FIELD ON PAGE LOAD
     return function postLink(scope, element, attrs) {
