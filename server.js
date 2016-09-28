@@ -18,7 +18,7 @@ app.use('/bower_components', express.static(path.join(__dirname + '/bower_compon
 app.use(express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 
-require('./assets/js/config.js')(app);
+// require('./assets/js/config.js')(app);
 
 var env = process.env.GOOGLE_KEY || 'develop';
 
