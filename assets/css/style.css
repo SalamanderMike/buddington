@@ -230,60 +230,26 @@ li {
 }
 
 /*SERVICES >***************************************************/
-.skin-content {
-	background: rgba(255,64,0, .5);
-	border: solid 1px #d2d0d0;
+.services-content {
+	margin-top: 50px;
+	background: white;
 	text-align: center;
 }
-.skin-sections {
-	background: rgba(86,154,186,.3);
+.content-title {
+	position: relative;
+	top: -58px;
+	left: 30px;
+	text-align: left;
+	font-family: 'Dancing Script', cursive;
+	font-size: 42px;
+	color: #814700;
+	text-shadow: 4px 4px 5px rgba(150, 150, 150, .6);
+	opacity: .8;
 }
-
-
-.facial-content {
-	background: rgba(230,230,250, .5);
-	border: solid 1px #d2d0d0;
-	text-align: center;
-}
-.facial-sections {
-	background: rgba(86,154,186,.3);
-}
-
-
-.body-content {
-	background: rgba(255,219,0, .3);
-	border: solid 1px #d2d0d0;
-	text-align: center;
-}
-.body-sections {
-	background: rgba(86,154,186,.3);
-}
-
-
-.peels-content {
-	background: rgba(255,0,231, .1);
-	border: solid 1px #d2d0d0;
-	text-align: center;
-}
-.peels-sections {
-	background: rgba(86,154,186,.3);
-}
-
-.eyes-content {
-	background: rgba(0,223,255, .1);
-	border: solid 1px #d2d0d0;
-	text-align: center;
-}
-.eyes-sections {
-	background: rgba(86,154,186,.3);
-}
-
-
-.service-titles {
+.content-subTitles {
 	font-size: 1.3em;
-
 }
-.service-blocks {
+.content-blocks {
 	position: relative;
 	background: #fffbf0;
 	min-height: 100px;
@@ -292,11 +258,11 @@ li {
 	padding: 50px;
 	box-shadow:         5px 7px 10px 0px rgba(0, 0, 0, 0.44);
 	border: solid 1px cyan;
-	border-radius: 100%;
+	border-radius: 5%;
 	display: inline-block;
 }
 
-section-content
+
 
 /*CONTACT >***************************************************/
 .contact-content {
@@ -485,18 +451,20 @@ section-content
 		top: 410px;
 		left: 0;
 	}
-
 	.directions {
 		width: 310px;
 	}
-
-
+	.home-mid {
+		top: 120px;
+	}
+	.content-box {
+		margin-top: 50px;
+	}
 }
 
 
 /*test SMALL size*/
 @media (max-width: 667px) {
-
 }
 
 /*RESPONSIVE DESIGN (DEVICE)**********************************************************/
@@ -651,13 +619,6 @@ section-content
 	drawer > div > div:hover {
 		color: #30659b;
 	}
-
-
-
-
-
-
-
 }
 
 
@@ -700,6 +661,3 @@ section-content
 	  and (orientation: landscape) {
 
 	}
-
-
-
