@@ -4,6 +4,10 @@ var express = require('express'),
 	app = express();
 
 
+// DISABLED FOR PRODUCTION
+// var Config = require('./assets/js/config.js');
+// var conf = new Config();
+
 
 // Middleware
 app.use(bodyParser.urlencoded({extended: true}));
@@ -21,13 +25,12 @@ app.set('view engine', 'ejs');
 // require('./assets/js/config.js')(app);
 
 var env = process.env.GOOGLE_KEY || 'develop';
-
-app.get('/config', function (req, res) {
+app.get('/config', function(req, res) {
 	if (env !== 'develop') {
 		res.send(env);
 	} else {
-		res.json({result: process.env.LOCAL_ENV});
-	}
+		res.send(conf.GOOG);
+	};
 });
 
 
