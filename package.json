@@ -1,25 +1,30 @@
 {
-  "name": "med esthetics",
-  "version": "1.0.2",
-  "description": "Med Esthetics Business Site",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SalamanderMike/buddington.git"
-  },
-  "author": "Michael McClure",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SalamanderMike/buddington/issues"
-  },
-  "homepage": "https://github.com/SalamanderMike/buddington#readme",
-  "dependencies": {
-    "body-parser": "^1.16.1",
-    "bower": "^1.8.0",
-    "ejs": "^2.5.6",
-    "express": "^4.14.1"
-  }
+	"name": "medesthetics",
+	"version": "1.0.2",
+	"description": "homesite for medesthetics",
+	"main": "server.js",
+	"dependencies": {},
+	"devDependencies": {
+		"body-parser": "1.15.2",
+		"bower": "1.8.0",
+		"ejs": "2.5.2",
+		"express": "4.14.0"
+	},
+	"scripts": {
+		"test": "none",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SalamanderMike/buddington.git"
+	},
+	"keywords": [
+		"medesthetics"
+	],
+	"author": "Michael McClure",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SalamanderMike/buddington/issues"
+	},
+	"homepage": "http://www.med-estheticsrx.com"
 }
