@@ -11,11 +11,8 @@
 	},
 	"devDependencies": {},
 	"engines": {
-		"node": "7.7.4"
-	},
-	"scripts": {
-		"test": "none",
-		"start": "node server.js"
+    "node": "7.7.4",
+    "npm": "4.1.2"
 	},
 	"repository": {
 		"type": "git",
@@ -29,5 +26,5 @@
 	"bugs": {
 		"url": "https://github.com/SalamanderMike/buddington/issues"
 	},
-	"homepage": "http://www.med-estheticsrx.com"
+	"homepage": "https://github.com/SalamanderMike/buddington"
 }
