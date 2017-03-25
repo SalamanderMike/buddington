@@ -3,12 +3,15 @@
 	"version": "1.0.2",
 	"description": "homesite for medesthetics",
 	"main": "server.js",
-	"dependencies": {},
-	"devDependencies": {
-		"body-parser": "1.17.1",
+	"dependencies": {
+		"body-parser": "1.16.1",
 		"bower": "1.8.0",
 		"ejs": "2.5.6",
 		"express": "4.15.2"
+	},
+	"devDependencies": {},
+	"engines": {
+		"node": "7.7.4"
 	},
 	"scripts": {
 		"test": "none",
