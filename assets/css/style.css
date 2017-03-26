@@ -234,6 +234,7 @@ li {
 	margin-top: 50px;
 	background: white;
 	text-align: center;
+	overflow: hidden;
 }
 .content-title {
 	position: relative;
