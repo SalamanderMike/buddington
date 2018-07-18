@@ -154,7 +154,7 @@ li {
 
 /*PANELS >*******************************************/
 .tab-content{
-	/*background: rgba(255, 255, 255, .75);*/
+	background: rgba(255, 255, 255, .55);
 	position: absolute;
 	margin-top: 225px;
 	height: 80%;
@@ -237,8 +237,6 @@ li {
 /*SERVICES >***************************************************/
 .services-content {
 	padding-top: 50px;
-	background: rgba(255, 255, 255, .55);
-	/*background: white;*/
 	text-align: center;
 	overflow: hidden;
 }
