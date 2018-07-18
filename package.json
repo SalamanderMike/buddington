@@ -1,31 +1,33 @@
 {
   "name": "medesthetics",
-  "version": "1.1",
-  "description": "homesite for medesthetics",
+  "version": "1.1.0",
+  "description": "This node app serves Med Esthetics Rx Business",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "1.18.3",
-    "bower": "1.8.4",
-    "ejs": "2.6.1",
-    "express": "4.16.3",
-    "nodemon": "1.18.3"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": "10.7.0",
-    "npm": "6.1.0"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SalamanderMike/buddington.git"
   },
-  "keywords": [
-    "medesthetics"
-  ],
   "author": "Michael McClure",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SalamanderMike/buddington/issues"
   },
-  "homepage": "https://github.com/SalamanderMike/buddington"
+  "homepage": "https://github.com/SalamanderMike/buddington#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bower": "^1.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "engines": {
+    "node": "10.7.0",
+    "npm": "6.1.0"
+  }
 }
