@@ -1,18 +1,19 @@
 {
   "name": "medesthetics",
-  "version": "1.0.2",
+  "version": "1.1",
   "description": "homesite for medesthetics",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "bower": "^1.8.0",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "body-parser": "^1.18.3",
+    "bower": "^1.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
   },
   "devDependencies": {},
   "engines": {
-    "node": "^8.2.1",
-    "npm": "^5.3.0"
+    "node": "^10.6.0",
+    "npm": "^6.2.0"
   },
   "repository": {
     "type": "git",

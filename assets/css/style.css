@@ -42,7 +42,7 @@ p {
 	display: hidden;
 	outline: none;
 	text-decoration: none;
-	color: yellow;
+	color: #006BFF;
 }
 
 ul {
@@ -53,6 +53,7 @@ li {
 	position: relative;
 	left: -20px;
 }
+
 
 /*HEADER >***************************************************/
 #section-head {
@@ -153,23 +154,24 @@ li {
 
 /*PANELS >*******************************************/
 .tab-content{
-	background: rgba(255, 255, 255, .75);
+	/*background: rgba(255, 255, 255, .75);*/
 	position: absolute;
-	top: 220px;
-	bottom: 0;
+	margin-top: 225px;
+	height: 80%;
+	width: 100%;
 	left: 0;
 	right: 0;
-	padding: 5px 18px;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	-moz-box-shadow:    0px 0px 50px 0px rgba(0, 100, 255, 0.25);
-	box-shadow:         0px 0px 50px 0px rgba(0, 100, 255, 0.25);
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 0, 0.25);
+	-moz-box-shadow:    0px 0px 50px 0px rgba(255, 255, 0, 0.25);
+	box-shadow:         0px 0px 50px 0px rgba(255, 255, 0, .75);
 	display: block;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .tab-pane {
 	position: absolute;
-	height: 550px;
+	height: 100%;
 	width: 100%;
 	display: block;
 }
@@ -177,11 +179,11 @@ li {
 .content-box {
 	position: absolute;
 	height: 100%;
+	width: 100%;
 	font-family: 'Muli', sans-serif;
 	color: #444444;
 	text-align: left;
 	font-size: .95em;
-	padding-right: 18px;
 	display: block;
 	overflow-y: scroll;
 }
@@ -191,7 +193,7 @@ li {
 /*HOME >***************************************************/
 .home-content {
 	position: relative;
-	top: 115px;
+	top: 135px;
 	color: brown;
 	font-size: 2em;
 	text-shadow: 0px 0px 10px rgba(0, 100, 255, .3);
@@ -220,32 +222,37 @@ li {
 }
 
 /*PRODUCTS >***************************************************/
-.products-content {
+#products-content {
 	position: relative;
 	left: 0px;
 	right: 0px;
 	color: grey;
 	font-size: 1.4em;
 	z-index: 10;
+	overflow: hidden;
 }
+
+
 
 /*SERVICES >***************************************************/
 .services-content {
-	margin-top: 50px;
-	background: white;
+	padding-top: 50px;
+	background: rgba(255, 255, 255, .55);
+	/*background: white;*/
 	text-align: center;
 	overflow: hidden;
 }
 .content-title {
+	background: cyan;
 	position: relative;
 	top: -58px;
-	left: 30px;
+	left: 0px;
+	padding-left:30px;
 	text-align: left;
 	font-family: 'Dancing Script', cursive;
 	font-size: 42px;
 	color: #814700;
 	text-shadow: 4px 4px 5px rgba(150, 150, 150, .6);
-	opacity: .8;
 }
 .content-subTitles {
 	font-size: 1.3em;
@@ -255,9 +262,11 @@ li {
 	background: #fffbf0;
 	min-height: 100px;
 	width: 400px;
-	margin: 20px;
+	margin: 20px 20px 100px 20px;
 	padding: 50px;
-	box-shadow:         5px 7px 10px 0px rgba(0, 0, 0, 0.44);
+	-webkit-box-shadow: 5px 7px 10px 0px rgba(0, 0, 0, 0.44);
+	-moz-box-shadow: 5px 7px 10px 0px rgba(0, 0, 0, 0.44);
+	box-shadow: 5px 7px 10px 0px rgba(0, 0, 0, 0.44);
 	border: solid 1px cyan;
 	border-radius: 5%;
 	display: inline-block;
@@ -267,7 +276,7 @@ li {
 
 /*CONTACT >***************************************************/
 .contact-content {
-
+	overflow: hidden;
 }
 
 .address {
@@ -306,9 +315,24 @@ li {
 	width: 500px;
 /*	background: grey;
 	background: url('../images/map.gif');*/
+	-webkit-box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);
+	-moz-box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);
 	box-shadow: inset 5px 7px 10px 0px rgba(0,0,0, 0.4);
 	border: solid 2px #b0b0b0;
 	display: inline-block;
+}
+
+
+
+/*about >***************************************************/
+#about-content {
+	margin: 10px;
+}
+
+
+/*news >***************************************************/
+#news-content {
+	margin: 10px;
 }
 
 
