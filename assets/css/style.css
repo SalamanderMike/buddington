@@ -161,9 +161,9 @@ li {
 	width: 100%;
 	left: 0;
 	right: 0;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 0, 0.25);
-	-moz-box-shadow:    0px 0px 50px 0px rgba(255, 255, 0, 0.25);
-	box-shadow:         0px 0px 50px 0px rgba(255, 255, 0, .75);
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+	-moz-box-shadow:    0px 0px 50px 0px rgba(255, 255, 255, 1);
+	box-shadow:         0px 0px 50px 0px rgba(255, 255, 255, 1);
 	display: block;
 	z-index: -1;
 	overflow: hidden;
@@ -197,20 +197,26 @@ li {
 	color: brown;
 	font-size: 2em;
 	text-shadow: 0px 0px 10px rgba(0, 100, 255, .3);
-	font-family: 'Dancing Script', cursive;
-	opacity: .4;
 	z-index: -9;
 }
 .home-top {
 	position: relative;
-	left: 100px;
+	top: 250px;
+	left: 20px;
+	width: 170px;
 	text-align: left;
+	text-shadow: 0px 0px 5px rgba(255, 255, 0, .4);
+	font-family: 'Josefin Sans', sans-serif;
 }
 .home-mid {
 	position: relative;
-	top: 50px;
-	right: 20px;
-	text-align: right;
+	top: 375px;
+	left: 70px;
+	text-align: left;
+	color: blue;
+	text-shadow: 0px 0px 5px rgba(0, 255, 255, 1);
+	font-family: 'Dancing Script', cursive;
+	opacity: .4;
 }
 .home-bot {
 	position: fixed;
@@ -218,7 +224,10 @@ li {
 	left: 0;
 	right: 0;
 	margin: 20px;
-	text-align: center;
+	text-align: right;
+	color: white;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 /*PRODUCTS >***************************************************/
@@ -241,7 +250,7 @@ li {
 	overflow: hidden;
 }
 .content-title {
-	background: cyan;
+	background: rgba(0, 255, 255, 0.6);
 	position: relative;
 	top: -58px;
 	left: 0px;
@@ -268,12 +277,14 @@ li {
 	border: solid 1px cyan;
 	border-radius: 5%;
 	display: inline-block;
+	text-align: justify;
 }
 
 
 
 /*CONTACT >***************************************************/
 .contact-content {
+	padding: 10px;
 	overflow: hidden;
 }
 
@@ -281,6 +292,7 @@ li {
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin: 10px;
 }
 
 .directions {
@@ -300,8 +312,6 @@ li {
 	position: relative;
 	text-align: right;
 }
-
-
 
 
 #map {
@@ -352,7 +362,6 @@ li {
 #orinda-2 {
 	position: relative;
 	top: 0px;
-	margin: 0 10px 10px 0;
 	float: left;
 	height: 286px;
 	width: 191px;
@@ -478,7 +487,6 @@ li {
 		width: 310px;
 	}
 	.home-mid {
-		top: 120px;
 	}
 	.content-box {
 		margin-top: 50px;
